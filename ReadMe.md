@@ -98,3 +98,7 @@ Plaintext
     ├── app.py                 # Streamlit UI
     ├── processor.py           # Validierungs- & Analyse-Logik
     └── requirements.txt       # Python-Abhängigkeiten
+
+
+Wir haben auch noch ein Wiki:
+https://github.com/sosimple83/fossgis-student-warmup/wiki
