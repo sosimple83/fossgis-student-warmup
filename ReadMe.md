@@ -35,14 +35,11 @@ Klimatologie & Wirkungsradien (metrics.py):Quantifizierung
 von Retentionsvolumen ($m^3$) und Mikroklima-Kühlung ($^\circ\text{C}$) basierend auf Wirkungsradien nach Zekar et al. 2023.
 
 Umweltgerechtigkeit & Walkability (walkability.py):Berechnung fußläufiger 300m-Grünraumkorridore zu neuen Kühlinseln zum Schutz
-
 vulnerabler Bevölkerungsgruppen (Senioren 60+ / Zensus- & LOR-Räume nach URBES-Ansatz).
 
 Spatio-Temporal Analysis (widgets.py):
 Interaktives Zeitreihen- und Szenarien-Storyteller-Widget zur Darstellung historischer Versiegelungsstufen (1950–2026) und Ziel-Szenarien
-
 für 2030.OSM-Qualitätsvalidierung (Neis-Methodik):Integrierter Confidence-Score zur Bewertung der Datenreife anhand von Bearbeitungsdichte
-
 und Edit-Historie (ohsome API).
 
 🚀 Schnellstart (Local-First)1.
