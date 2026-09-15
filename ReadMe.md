@@ -1,15 +1,26 @@
-# 🏙️ Challenge 2: Flächenentsiegelung & Schwammstadt (#hack4GDI_DE)
+---
 
-Willkommen im offiziellen Repository für **Challenge 2**. Dieses Projekt bietet euch die Datenbasis, QGIS-Starterprojekte und ein interaktives Streamlit-Dashboard für euren Jury-Pitch.
+#### 3. `README.md` (im Hauptverzeichnis)
 
-## 📂 Repository-Struktur
-- `data/` – Lokale GeoPackages für Mainz und Berlin Friedrichshain-Kreuzberg
-- `app/` – Streamlit-Dashboard für die Live-Präsentation (`app.py`)
-- `*.qgz` – Vorkonfigurierte QGIS-Starterprojekte im Hauptverzeichnis
+```markdown
+# 🏙️ FOSSGIS Challenge 2: Schwammstadt-Potenzialflächen (#hack4GDI_DE)
 
-## 🚀 Schnelleinstieg
-1. **QGIS öffnen:** Nutzt `mainz_starter.qgz` oder `berlin_fk_starter.qgz` für eure MCE-Analyse.
-2. **Wiki besuchen:** Alle Schritt-für-Schritt-Anleitungen findet ihr im [GitHub-Wiki](../../wiki).
-3. **Pitch-Viewer starten:**
+Willkommen zur Challenge 2! In diesem Repository findet ihr alle Grundlagen, um versiegelte Verkehrsflächen in multifunktionale Schwammstadt-Elemente umzuplanen.
+
+---
+
+### 🚀 Schnellstart in 3 Schritten
+
+1. **Aufgabe & Story verstehen:**
+   Lest euch das Planungsmandat und die Leitfragen in [`docs/CHALLENGE_STORY.md`](docs/CHALLENGE_STORY.md) durch.
+
+2. **Daten in QGIS laden & analysieren:**
+   Zieht die GeoPackage-Datei eurer Wunschregion per Drag & Drop direkt in QGIS:
+   - **Mainz:** `data/mainz/mainz_base.gpkg`
+   - **Berlin:** `data/berlin_fk/berlin_fk_base.gpkg`
+   *(Klickpfade und SQL-Filter findet ihr in [`docs/SPICKZETTEL_QGIS.md`](docs/SPICKZETTEL_QGIS.md))*
+
+3. **Dashboard starten:**
    ```bash
+   pip install -r requirements.txt
    streamlit run app/app.py
