@@ -163,15 +163,29 @@ END
 
 ```
 
----
+⚠️ Typische Fallstricke & Troubleshooting
+Fehler: GEOS exception: TopologyException / Invalid Geometry
 
-### Für die Screenshots im Git-Repository:
-1. Erstelle lokal den Ordner `docs/images/`.
-2. Lege deine Screenshots dort unter den Namen ab:
-   * `01_filter.png`
-   * `02_intersection.png`
-   * `03_buffer.png`
-   * `04_field_calculator.png`
-3. Per `git add docs/`, `git commit` und `git push` hochladen – GitHub rendert die Bilder dann sofort passend im Text.
+Ursache: OSM- oder ALKIS-Polygone enthalten minimale Selbstüberschneidungen.
 
-```
+Lösung: Verarbeitungsleiste ➔ Werkzeug Geometrien reparieren (Fix geometries) über den Eingabelayer laufen lassen und das Ergebnis weiterverwenden.
+
+Problem: Fläche (flaeche_m2) ist plötzlich 0 oder hat winzige Kommazahlen
+
+Ursache: Die Berechnung wurde ausgeführt, nachdem der Layer bereits in EPSG:4326 (WGS84) umgewandelt wurde (Berechnung in Quadratgrad statt Quadratmetern).
+
+Lösung: Schritt 5 zwingend im metrischen Projekt-KBS (EPSG:25832 oder EPSG:25833) ausführen.
+
+Problem: Einteilige Parkstreifen hängen zusammen (Multipolygon)
+
+Ursache: Durch Verschneidungen entstehen Multipart-Geometrien, wodurch $area die Summe mehrerer Einzelstreifen liefert.
+
+Lösung: Werkzeug Vektor ➔ Geometrie-Werkzeuge ➔ Mehrteilige in einteilige Objekte zerlegen (Multipart to singleparts) vorschalten.
+
+Problem: NULL-Werte bei der Temperaturklasse
+
+Ursache: Die Fläche liegt am Kachelrand des Hitzemodells oder außerhalb der Modellausdehnung.
+
+Lösung: Im Feldrechner mit COALESCE("temp_klasse", 'Mittel') arbeiten oder Randflächen prüfen.
+
+
