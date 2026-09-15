@@ -7,6 +7,7 @@ Dieser Leitfaden führt Schritt für Schritt durch alle Werkzeuge, um aus den Ro
 
 ---
 
+
 ## Schritt 1: Rechtliche Machbarkeit filtern (ALKIS)
 
 **Ziel:** Nur Flurstücke behalten, die sich im öffentlichen Eigentum befinden.
