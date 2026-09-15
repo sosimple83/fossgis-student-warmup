@@ -1,31 +1,35 @@
 # 🏙️ Challenge 2: Flächenentsiegelung & Schwammstadt (#hack4GDI_DE)
 
-### Das Szenario
-Ihr seid das städtische Transformationsteam. Die Stadtverordnetenversammlung hat ein Sofortprogramm für Klimaanpassung beschlossen: Bis 2030 müssen hitzebelastete, versiegelte Verkehrsräume in multifunktionale Schwammstadt-Elemente umgewandelt werden.
+## Das Szenario
+Die Stadtverordnetenversammlung hat ein Sofortprogramm zur Klimaanpassung auf den Weg gebracht: Bis 2030 sollen überdimensionierte, monotone Verkehrsflächen in multifunktionale Schwammstadt-Elemente transformiert werden.
 
-**Euer Auftrag:**
-Identifiziert im Fokusraum (Mainz oder Berlin Friedrichshain-Kreuzberg) die Top-Potenzialflächen und definiert für jeden Standort eine konkrete bauliche Maßnahme.
-
----
-
-### Die 3 planerischen Leitfragen (MCE-Logik)
-
-1. **Rechtliche Machbarkeit (Wo darf die Stadt sofort bauen?):**
-   * Wo kann die Kommune ohne langwierigen Grunderwerb oder private Verhandlungen eingreifen?
-   * *Datenbasis:* `alkis_flurstuecke` (Attribut `t_eigentuemer`).
-
-2. **Flächenpotenzial (Was bauen wir um?):**
-   * Welche Flächen im Straßenraum sind monoton versiegelt und bieten ausreichend Raum für Versickerung?
-   * *Datenbasis:* `osm_graues_band_parkplaetze`.
-
-3. **Dringlichkeit & Grünraumdefizit (Wo brennt es am meisten?):**
-   * In welchen Quartieren fehlt es an wohnungsnahen Grünflächen? Reicht der Abstand zu vorhandenen Parks?
-   * *Datenbasis:* `osm_gruenflaechen_groesser_2ha` (z. B. 300 m Puffer).
+**Euer Auftrag:** Identifiziert im Fokusraum (Mainz oder Berlin Friedrichshain-Kreuzberg) geeignete Entsiegelungs-Standorte, bewertet diese anhand einer Multi-Kriterien-Analyse (MCE) und leitet konkrete bauliche Maßnahmen ab.
 
 ---
 
-### Das finale Übergabeformat
-Für den Pitch-Viewer im Dashboard (`app/app.py`) exportiert ihr euren Ergebnis-Layer als `data/ergebnis.geojson` (KBS: EPSG:4326) mit folgenden drei Spalten:
-* `flaeche_m2`: Flächengröße in m² (z. B. berechnet via `round($area, 0)`)
-* `prioritaet`: "Hoch", "Mittel" oder "Niedrig"
-* `massnahme`: Eure planerische Idee (z. B. "Pocket-Park", "Baumrigole", "Versickerungsmulde")
+## Die 4 methodischen Kriterien (MCE-Grundlagen)
+
+Die konkreten Schwellenwerte, Gewichtungen und Ausschlussradien werden durch die Challenge-Leitung (Prof. Dr. Markus Schaffert / Mentoren) im Kick-off bekannt gegeben oder im Team eigenständig begründet.
+
+1. **Rechtliche Machbarkeit (Verfügbarkeit):**
+   * Welche Liegenschaften liegen in kommunaler Hand, um Genehmigungsverfahren schlank zu halten?
+   * *Datenbasis:* `alkis_flurstuecke` (Attribut: `t_eigentuemer`)
+2. **Flächenpotenzial (Substanz):**
+   * Wo befinden sich zusammenhängende Parkplatz- und Randstreifenflächen mit ausreichend Raum für Versickerung?
+   * *Datenbasis:* `osm_graues_band_parkplaetze`
+3. **Grünraumdefizit (Umfeldversorgung):**
+   * Wo fehlen wohnungsnahe Erholungs- und Vegetationsflächen im Quartier?
+   * *Datenbasis:* `osm_gruenflaechen_groesser_2ha` (Pufferdistanz nach Vorgabe)
+4. **Thermische Dringlichkeit (Stadtklima):**
+   * Welche Bereiche leiden besonders unter Überwärmung und Tropennächten?
+   * *Datenbasis:* `klima_hitzeinseln` (Spalte: `temp_klasse`)
+
+---
+
+## Das finale Übergabeformat
+
+Für die Auswertung und den Pitch-Viewer exportiert jedes Team seinen finalen Layer als `data/ergebnis.geojson` im KBS **EPSG:4326 (WGS 84)** mit folgenden Kernattributen:
+
+* `flaeche_m2`: Flächengröße in m² (z. B. `round($area, 0)`)
+* `prioritaet`: Dringlichkeitsstufe (`Hoch`, `Mittel` oder `Niedrig`)
+* `massnahme`: Geplanter Schwammstadt-Typ (z. B. *„Pocket-Park“*, *„Baumrigole“*, *„Versickerungsmulde“*)
