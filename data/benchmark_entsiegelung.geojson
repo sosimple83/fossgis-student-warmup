@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "name": "benchmark_entsiegelung_fk",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "projekt": "Blücherstraße (Modellprojekt Schwammstadt)",
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "jahr_umsetzung": 2024,
+        "entsiegelt_m2": 450,
+        "massnahme": "Baumrigolen & Entsiegelung Mittelstreifen",
+        "ursprung": "Parkstreifen / graues Band",
+        "status": "Umgesetzt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.3965, 52.4952]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "projekt": "Bergmannkiez (Klimaoase)",
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "jahr_umsetzung": 2023,
+        "entsiegelt_m2": 280,
+        "massnahme": "Pocket-Park & Versickerungsbeete",
+        "ursprung": "Ehemalige Senkrechtparkplätze",
+        "status": "Umgesetzt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.3887, 52.4886]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "projekt": "Lausitzer Platz / Spreewaldplatz",
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "jahr_umsetzung": 2025,
+        "entsiegelt_m2": 320,
+        "massnahme": "Entsiegelte Baumscheiben & Rigolen",
+        "ursprung": "Gehwegüberbreiten / Stellplätze",
+        "status": "Umgesetzt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.4268, 52.5008]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "projekt": "Boxhagener Straße / Knorrpromenade",
+        "bezirk": "Friedrichshain-Kreuzberg",
+        "jahr_umsetzung": 2024,
+        "entsiegelt_m2": 190,
+        "massnahme": "Versickerungsmulde an Kreuzung",
+        "ursprung": "Verkehrsinsel & Parkbucht",
+        "status": "Umgesetzt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.4602, 52.5115]
+      }
+    }
+  ]
+}
