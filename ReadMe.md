@@ -1,6 +1,5 @@
 
 
-#### 3. `README.md` (im Hauptverzeichnis)
 
 ```markdown
 # 🏙️ FOSSGIS Challenge 2: Schwammstadt-Potenzialflächen (#hack4GDI_DE)
