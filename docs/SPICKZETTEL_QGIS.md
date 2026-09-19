@@ -1,6 +1,3 @@
-Hier ist die vollständig überarbeitete und praxiserprobte Fassung deiner `docs/SPICKZETTEL_QGIS.md`.
-
-Die fünf Screenshots (`01_filter.png` bis `05_field_calculator.png`) sind direkt an den passenden Stellen eingebunden, die Layer- und Spaltennamen entsprechen exakt der Mainzer Datenbasis (inklusive `temp_klasse` und `ILIKE`-Toleranz), und die Phase 2 der Attributberechnung ist vollständig ausformuliert:
 
 ```markdown
 # 🛠️ QGIS-Spickzettel: Multi-Kriterien-Analyse (MCE)
