@@ -1,28 +1,4 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Local Caches & Data
-cache/
-.cache/
-*.gpkg-shm
-*.gpkg-wal
-
-# Environments & Virtualenvs
-.venv/
-venv/
-ENV/
-env/
-
-# Docker & OS
-.DS_Store
-Thumbs.db
-*.log
-
-# Streamlit local settings
-.streamlit/secrets.toml
-
-# IDEs
-.vscode/
-.idea/-e "Python-Bereiniger.py\nprÅfen.py\nrelativ.py\ngit" 
+# .gitignore
+data/*.geojson
+data/*.gpkg
+!data/.gitkeep

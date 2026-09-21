@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "name": "ergebnis",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "flstkennz": "0716326508",
+        "temp_klasse": "stark",
+        "flaeche_m2": 450.0,
+        "prioritaet": "Hoch",
+        "massnahme": "Pocket-Park mit Retentionsmulde"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [8.2450, 49.9920],
+            [8.2460, 49.9920],
+            [8.2460, 49.9910],
+            [8.2450, 49.9910],
+            [8.2450, 49.9920]
+          ]
+        ]
+      }
+    }
+  ]
+}
