@@ -1,12 +1,5 @@
 # 🏙️ Challenge 2: Flächenentsiegelung & Schwammstadt (#hack4GDI_DE)
 
-## Das Szenario
-Die Stadtverordnetenversammlung hat ein Sofortprogramm zur Klimaanpassung auf den Weg gebracht: Bis 2030 sollen überdimensionierte, monotone Verkehrsflächen in multifunktionale Schwammstadt-Elemente transformiert werden.
-
-**Euer Auftrag:** Identifiziert im Fokusraum (Mainz oder Berlin Friedrichshain-Kreuzberg) geeignete Entsiegelungs-Standorte, bewertet diese anhand einer Multi-Kriterien-Analyse (MCE) und leitet konkrete bauliche Maßnahmen ab.
-
----
-
 ## Die 4 methodischen Kriterien (MCE-Grundlagen)
 
 Die konkreten Schwellenwerte, Gewichtungen und Ausschlussradien werden durch die Challenge-Leitung (Prof. Dr. Markus Schaffert / Mentoren) im Kick-off bekannt gegeben oder im Team eigenständig begründet.
