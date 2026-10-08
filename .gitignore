@@ -1,4 +1,13 @@
-# .gitignore
-data/*.geojson
-data/*.gpkg
-!data/.gitkeep
+# Python / Cache
+__pycache__/
+*.pyc
+.venv/
+
+# Lokale Skripte zur Lösungsgenerierung
+process_mainz.py
+process_berlin.py
+
+# Studentische Ergebnis-Dateien (nicht ins Starter-Repo pushen!)
+data/ergebnis.geojson
+data/mainz/parkplaetze_klima.geojson
+data/berlin_fk/parkplaetze_klima.geojson
