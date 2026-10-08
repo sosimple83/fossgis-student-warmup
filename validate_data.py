@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
 Prüfskript für die Schwammstadt-Challenge (#hack4GDI_DE).
+Konzeption & Mentoring: Emmanuel Tobey | Tobey GIS Consulting (Berlin)
+
 Validiert Vorhandensein, KBS, Schemata und Topologie der Basisdaten (Mainz & Berlin)
 sowie die Konformität der studentischen Ergebnisdateien.
 """
@@ -197,10 +199,11 @@ def validate_student_output(name, config):
     return validate_gdf_layer(name, gdf, config["allowed_crs"], config["required_columns"])
 
 def main():
-    print("=" * 68)
-    print("  Schwammstadt-Challenge: Daten- und Schema-Validierung")
+    print("=" * 70)
+    print("  #hack4GDI_DE Challenge 2: Flächenentsiegelung & Schwammstadt")
+    print("  Mentoring & Konzeption: Emmanuel Tobey | Tobey GIS Consulting")
     print(f"  Root: {BASE_DIR}")
-    print("=" * 68)
+    print("=" * 70)
 
     success = True
 
@@ -235,14 +238,14 @@ def main():
         if not validate_student_output(name, cfg):
             success = False
 
-    print("\n" + "=" * 68)
+    print("\n" + "=" * 70)
     if success:
         print("  ERGEBNIS: System- und Datencheck erfolgreich abgeschlossen.")
-        print("=" * 68)
+        print("=" * 70)
         sys.exit(0)
     else:
         print("  ERGEBNIS: Kritische Fehler in den Basisdaten oder Attributen!")
-        print("=" * 68)
+        print("=" * 70)
         sys.exit(1)
 
 if __name__ == "__main__":
