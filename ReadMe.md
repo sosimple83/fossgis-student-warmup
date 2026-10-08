@@ -1,3 +1,13 @@
+# Challenge 2: Flächenentsiegelung & Schwammstadt (#hack4GDI_DE)
+
+**Mentoring & fachliche Konzeption:**  
+Emmanuel Tobey | **Tobey GIS Consulting** (Berlin)  
+*Open-Source-GIS • FOSSGIS • Geodaten-Automatisierung*  
+
+**Lizenz:** MIT License – Copyright (c) 2026 Emmanuel Tobey  
+
+---
+
 # 🚀 Schnellstart in 3 Schritten
 
 ### 1. Aufgabe & Story verstehen:
